@@ -17,28 +17,39 @@ const BlogPostTemplate = ({
         className="blog-post"
         itemScope
         itemType="http://schema.org/Article"
+        style={{ marginTop: -42 }}
       >
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
+          <hr/>
         </header>
+        </article>
+        <article
+        className="blog-post"
+        itemScope
+        itemType="http://schema.org/Article"
+        style={{ marginTop: 10 }}
+        >
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
-        <hr />
+        </article>
+
         <footer>
-          <Bio />
         </footer>
-      </article>
-      <nav className="blog-post-nav">
+
+      <nav className="blog-post-nav" style={{ marginTop: -5 }}> 
         <ul
           style={{
             display: `flex`,
             flexWrap: `wrap`,
-            justifyContent: `space-between`,
+            justifyContent: `flex-start`,
+            gap: '20px', // Changed from '-55px' to add some space between links
             listStyle: `none`,
             padding: 0,
+            margin: 0, // Added to remove default margin
           }}
         >
           <li>

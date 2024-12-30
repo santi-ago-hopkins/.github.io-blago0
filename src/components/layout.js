@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -12,6 +13,7 @@ const Layout = ({ location, title, children }) => {
         <Link to="/">{title}</Link>
       </h1>
     )
+
   } else {
     header = (
       <Link className="header-link-home" to="/">
@@ -23,14 +25,29 @@ const Layout = ({ location, title, children }) => {
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">{header}</header>
+      {isRootPath && (
+        <div className="planet-container" style={{ display: 'flex', justifyContent: 'center', gap: '10px', marginTop: '-30px' }}>
+          {[1, 2, 3, 4, 5,6,7,8,9,10].map((index) => (
+            <StaticImage
+              key={index}
+              src="../images/planet.png"
+              alt={`Planet ${index}`}
+              width={60}
+              aspectRatio={1/1}
+              formats={["auto", "webp", "avif"]}
+              className="blog-banner"
+            />
+          ))}
+        </div>
+      )}
       <main>{children}</main>
+      <hr />
       <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
+        *by santiago hopkins w/ Gatsby*
       </footer>
     </div>
   )
+  
 }
 
 export default Layout
