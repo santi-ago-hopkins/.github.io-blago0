@@ -1,6 +1,6 @@
 ---
 title: "from edwards"
-date: 2025-1-11
+date: 2025-01-11
 ---
 
 This time of year is pretty strange, at least in Berkeley. I would say only 30% of students are back from winter break. This time of year, when you run into someone in Berk, the quintessential question is "what are you doing here?." It seems that there's not one standard reason for a student to return so early to school. 
