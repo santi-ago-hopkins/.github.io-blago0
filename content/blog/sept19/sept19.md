@@ -1,6 +1,6 @@
 ---
 title: "sept19 "
-date: 2025-9-19
+date: 2025-09-19
 ---
 
 # a lot has happened
