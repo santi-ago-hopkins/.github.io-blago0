@@ -1,12 +1,12 @@
 ---
 title: "oct17"
-date: 2025-10-05
+date: 2025-10-17
 ---
 Just a typical entry. Inside on a sunny Friday.
 
 ### Man's Search for Meaning
 
-As a symptom (or perhaps treatment) of my recent spell downtrodedness, I recently read Man's Search for Meaning by Viktor Frankl. 
+As a symptom (or perhaps treatment) of my recent spell of downtrodedness, I recently read Man's Search for Meaning by Viktor Frankl. 
 
 Amongst other ideas, the quote that stuck out the most to me was:
 
